@@ -53,7 +53,7 @@ const HomeCards = () => {
               <a href="#" className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-green-400 mb-3">
                 AI
               </a>
-              <h2 className="text-slate-900 dark:text-white text-3xl font-extrabold mb-3">Effortlessly Create Your Will with AI</h2>
+              <h2 className="text-slate-900 dark:text-white text-3xl font-extrabold mb-3">Effortless Will creation with AI</h2>
               <p className="text-lg font-normal text-slate-500 dark:text-slate-400 mb-4">Our app features an AI-powered will generator for seamless estate planning. Say goodbye to complex paperwork and hello to a simplified process. Experience the convenience of creating a comprehensive will with ease, backed by intelligent algorithms. Secure the future of your estate effortlessly and efficiently.</p>
               <a href="#" className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Try the Will Generator
                 <svg aria-hidden="true" className="w-4 h-4 ml-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
