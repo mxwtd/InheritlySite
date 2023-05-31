@@ -16,7 +16,7 @@ const HomeHero = () => {
             variants={variants}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-col md:flex-row bg-slate-50/50 dark:bg-slate-700/40 py-10 mx-5 md:mx-0 md:py-20 rounded-xl backdrop-blur-sm border border-slate-200 dark:border-slate-600 shadow-xl">
+            <div className="flex flex-col md:flex-row bg-slate-50/50 dark:bg-slate-700/40 mt-20 md:mt-0 py-10 md:py-20 rounded-xl backdrop-blur-sm border border-slate-200 dark:border-slate-600 shadow-xl">
               <div id='column1' className="flex-1 overflow-hidden px-10 mb-8 md:mb-0">
                 <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                   <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
