@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import HomeFeatures from './HomeFeatures';
 
 const HomeCards = () => {
   const cardVariants = {
@@ -23,17 +24,18 @@ const HomeCards = () => {
     <>
       <section className="mt-10 min-h-screen pb-10">
         <div className="px-4 mx-auto max-w-screen-xl">
+          <HomeFeatures />
           <motion.div
             className="bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
             variants={cardVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.8}}
+            transition={{ duration: 0.3}}
             ref={ref}
             >
-              <a href="#" className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-blue-400 mb-4">
+              <p className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-600 dark:text-blue-400 mb-4">
                 Explore
-              </a>
+              </p>
               <h1 className="text-slate-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-3">Your family assets, visualised.</h1>
               <p className="text-lg font-normal text-slate-500 dark:text-slate-400 mb-6">Our fintech app empowers you to effortlessly manage your family estate. Gain full control over your assets, streamline planning, and make informed decisions. Unlock financial opportunities, collaborate with ease, and secure a prosperous future. Simplify wealth management and embrace the future of estate planning with our intuitive platform.</p>
               <a href="#" className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
@@ -47,12 +49,12 @@ const HomeCards = () => {
                 variants={cardVariants}
                 initial="hidden"
                 animate={inView2 ? "visible" : "hidden"}
-                transition={{ duration: 0.8, delay: 0.3}}
+                transition={{ duration: 0.3}}
                 ref={ref2}
             >
-              <a href="#" className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-green-400 mb-3">
-                AI
-              </a>
+              <p className="bg-green-200 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-600 dark:text-green-400 mb-3">
+                AI Generator
+              </p>
               <h2 className="text-slate-900 dark:text-white text-3xl font-extrabold mb-3">Effortless Will creation with AI</h2>
               <p className="text-lg font-normal text-slate-500 dark:text-slate-400 mb-4">Our app features an AI-powered will generator for seamless estate planning. Say goodbye to complex paperwork and hello to a simplified process. Experience the convenience of creating a comprehensive will with ease, backed by intelligent algorithms. Secure the future of your estate effortlessly and efficiently.</p>
               <a href="#" className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Try the Will Generator
@@ -66,12 +68,12 @@ const HomeCards = () => {
               variants={cardVariants}
               initial="hidden"
               animate={inView3 ? "visible" : "hidden"}
-              transition={{ duration: 0.8, delay: 0.3}}
+              transition={{ duration: 0.3}}
               ref={ref3}
             >
-              <a href="#" className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-purple-400 mb-3">
+              <p className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-600 dark:text-purple-400 mb-3">
                 Simple
-              </a>
+              </p>
               <h2 className="text-slate-900 dark:text-white text-3xl font-extrabold mb-3">Family-Friendly Simplicity</h2>
               <p className="text-lg font-normal text-slate-500 dark:text-slate-400 mb-4">Collaborate effortlessly with our app, designed to simplify wealth management for the entire family. Seamlessly track assets, share documents, and make decisions together. Enjoy a user-friendly interface that promotes transparency and strengthens family unity. Experience hassle-free collaboration while securing a prosperous future.</p>
               <a href="#" className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Try it Free

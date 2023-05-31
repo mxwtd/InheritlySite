@@ -14,13 +14,13 @@ const HomeFeatures = () => {
   return (
     <>
       <section>
-        <div className="px-4 mx-auto max-w-screen-xl">
+        <div className="mx-auto max-w-screen-xl">
           <motion.div
             className="bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
             variants={cardVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.8}}
+            transition={{ duration: 0.3}}
             ref={ref}
           >
             <div>
@@ -49,7 +49,7 @@ const HomeFeatures = () => {
                   <svg fill="none" className='w-20 h-20 text-slate-500 dark:text-slate-400' stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
                   </svg>
-                  <h2 className="text-center text-slate-500 dark:text-slate-400">Securely store information</h2>
+                  <h2 className="text-center text-slate-500 dark:text-slate-400">Securely stored information</h2>
                 </div>
               </div>
             </div>
