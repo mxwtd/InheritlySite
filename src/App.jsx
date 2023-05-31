@@ -6,7 +6,7 @@ import Contact from './assets/pages/Contact';
 
 function App() {
   return (
-    <div className='w-full min-h-screen bg-slate-200 dark:bg-slate-700'>
+    <div className="w-full h-[100%] bg-[url('https://res.cloudinary.com/djr22sgp3/image/upload/v1683277801/Light_ekxcia.svg')] dark:bg-[url('https://res.cloudinary.com/djr22sgp3/image/upload/v1683278025/Dark_b0r36s.svg')] bg-cover bg-center bg-no-repeat">
       <Router>
         <Navbar />
         <Routes>

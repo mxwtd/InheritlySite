@@ -21,10 +21,10 @@ const HomeCards = () => {
 
   return (
     <>
-      <section className="mt-40 min-h-screen">
+      <section className="mt-10 min-h-screen">
         <div className="px-4 mx-auto max-w-screen-xl">
           <motion.div
-            className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl"
+            className="bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl"
             variants={cardVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
@@ -43,7 +43,7 @@ const HomeCards = () => {
           </motion.div>
           <div className="grid h-full md:grid-cols-2 gap-8">
             <motion.div
-                className="h-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl"
+                className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl"
                 variants={cardVariants}
                 initial="hidden"
                 animate={inView2 ? "visible" : "hidden"}
@@ -62,7 +62,7 @@ const HomeCards = () => {
               </a>
             </motion.div>
             <motion.div
-              className="h-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 shadow-xl"
+              className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 shadow-xl"
               variants={cardVariants}
               initial="hidden"
               animate={inView3 ? "visible" : "hidden"}
