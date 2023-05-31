@@ -28,7 +28,7 @@ const HomeCards = () => {
             variants={cardVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            transition={{ duration: 0.3}}
             ref={ref}
             >
               <a href="#" className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-blue-400 mb-4">
@@ -47,7 +47,7 @@ const HomeCards = () => {
                 variants={cardVariants}
                 initial="hidden"
                 animate={inView2 ? "visible" : "hidden"}
-                transition={{ duration: 0.3, delay: 0.3, ease: "easeOut" }}
+                transition={{ duration: 0.3, delay: 0.3}}
                 ref={ref2}
             >
               <a href="#" className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-green-400 mb-3">
@@ -66,7 +66,7 @@ const HomeCards = () => {
               variants={cardVariants}
               initial="hidden"
               animate={inView3 ? "visible" : "hidden"}
-              transition={{ duration: 0.3, delay: 0.3, ease: "easeOut" }}
+              transition={{ duration: 0.3, delay: 0.3}}
               ref={ref3}
             >
               <a href="#" className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-purple-400 mb-3">
