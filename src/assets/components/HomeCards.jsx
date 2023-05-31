@@ -24,12 +24,12 @@ const HomeCards = () => {
       <section className="mt-10 min-h-screen">
         <div className="px-4 mx-auto max-w-screen-xl">
           <motion.div
-            className="bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl"
+            className="bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
             variants={cardVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.6 }}
-            ref={ref} // Pass the ref into your component
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            ref={ref}
             >
               <a href="#" className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-blue-400 mb-4">
                 Explore
@@ -43,12 +43,12 @@ const HomeCards = () => {
           </motion.div>
           <div className="grid h-full md:grid-cols-2 gap-8">
             <motion.div
-                className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl"
+                className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
                 variants={cardVariants}
                 initial="hidden"
                 animate={inView2 ? "visible" : "hidden"}
-                transition={{ duration: 0.6, delay: 0.3 }} // delay here
-                ref={ref2} // Pass the ref into your component
+                transition={{ duration: 0.3, delay: 0.3, ease: "easeOut" }}
+                ref={ref2}
             >
               <a href="#" className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-green-400 mb-3">
                 AI
@@ -62,11 +62,11 @@ const HomeCards = () => {
               </a>
             </motion.div>
             <motion.div
-              className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 shadow-xl"
+              className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
               variants={cardVariants}
               initial="hidden"
               animate={inView3 ? "visible" : "hidden"}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.3, ease: "easeOut" }}
               ref={ref3}
             >
               <a href="#" className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-slate-700 dark:text-purple-400 mb-3">
