@@ -11,7 +11,7 @@ function App() {
         <Navbar />
         <div
         id="content-div"
-          className='mt-0 md:mt-2 md:rounded-t-3xl md:mx-14 overflow-hidden'
+          className='mt-0 md:mt-2 md:rounded-t-3xl md:mx-14 shadow-2xl overflow-hidden z-50'
         >
           <div className="w-full h-[100%] bg-[url('https://res.cloudinary.com/djr22sgp3/image/upload/v1683277801/Light_ekxcia.svg')] dark:bg-[url('https://res.cloudinary.com/djr22sgp3/image/upload/v1683278025/Dark_b0r36s.svg')] bg-cover bg-center bg-no-repeat">
             <Routes>
