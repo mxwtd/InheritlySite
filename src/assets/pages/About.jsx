@@ -1,7 +1,9 @@
+import AboutHero from "../components/AboutHero"
+
 const About = () => {
   return (
     <>
-      <h1>About</h1>
+      <AboutHero />
     </>
   )
 }
