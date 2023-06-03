@@ -26,7 +26,7 @@ const HomeCards = () => {
         <div className="px-4 mx-auto max-w-screen-xl">
           <HomeFeatures />
           <motion.div
-            className="bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
+            className="bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-3xl p-8 md:p-12 mb-8 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
             variants={cardVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
@@ -38,14 +38,14 @@ const HomeCards = () => {
               </p>
               <h1 className="text-slate-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-3">Your family assets, visualised.</h1>
               <p className="text-lg font-normal text-slate-500 dark:text-slate-400 mb-6">Our fintech app empowers you to effortlessly manage your family estate. Gain full control over your assets, streamline planning, and make informed decisions. Unlock financial opportunities, collaborate with ease, and secure a prosperous future. Simplify wealth management and embrace the future of estate planning with our intuitive platform.</p>
-              <a href="#" className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+              <a href="#" className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-2xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                 Explore Features
                 <svg aria-hidden="true" className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               </a>
           </motion.div>
           <div className="grid h-full md:grid-cols-2 gap-8">
             <motion.div
-                className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 mb-8 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
+                className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-3xl p-8 md:p-12 mb-8 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
                 variants={cardVariants}
                 initial="hidden"
                 animate={inView2 ? "visible" : "hidden"}
@@ -64,7 +64,7 @@ const HomeCards = () => {
               </a>
             </motion.div>
             <motion.div
-              className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-8 md:p-12 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
+              className="h-full bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-3xl p-8 md:p-12 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out"
               variants={cardVariants}
               initial="hidden"
               animate={inView3 ? "visible" : "hidden"}

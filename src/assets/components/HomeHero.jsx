@@ -16,11 +16,11 @@ const HomeHero = () => {
             variants={variants}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-col md:flex-row bg-slate-50/50 dark:bg-slate-700/40 mt-32 md:mt-0 py-10 md:py-20 rounded-xl backdrop-blur-sm border border-slate-200 dark:border-slate-600 shadow-xl">
+            <div className="flex flex-col md:flex-row bg-slate-50/50 dark:bg-slate-700/40 mt-32 md:mt-0 py-10 md:py-20 rounded-3xl backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 ease-in-out border border-slate-200 dark:border-slate-600 shadow-xl">
               <div id='column1' className="flex-1 overflow-hidden px-10 mb-8 md:mb-0 mt-5">
                 <div className="relative mx-auto border-slate-600 dark:border-slate-800 bg-slate-600 dark:bg-slate-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                   <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-slate-800">
-                      <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png" className="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="" />
+                      <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png" className="dark:hidden h-[156px] md:h-[278px] w-full rounded-3xl" alt="" />
                       <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" className="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt=""/>
                   </div>
                 </div>
