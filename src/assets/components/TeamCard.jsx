@@ -5,13 +5,12 @@ const TeamCard = () => {
     {
       name: 'Max Whitehead',
       role: 'Co-Founder & Full Stack Developer',
-      imageUrl:
-        'https://dummyimage.com/255',
+      imageUrl: 'https://res.cloudinary.com/djr22sgp3/image/upload/v1685782208/51349626V2_bzvlom.webp',
     },
     {
       name: 'Santiago Ospina Idrobo',
       role: 'Co-Founder & Full Stack Developer',
-      imageUrl: 'https://dummyimage.com/256',
+      imageUrl: 'https://res.cloudinary.com/djr22sgp3/image/upload/v1685782207/51349626_fp3mlq.webp',
     },
     {
       name: 'Michael Whitehead',
