@@ -8,7 +8,7 @@ const HomeHero = () => {
 
   return (
     <>
-      <section className="min-h-screen max-h-screen flex items-center justify-center md:mt-0 bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full top-0 left-0 z-0">
+      <section className="min-h-screen flex items-center justify-center md:mt-0 bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full top-0 left-0 z-0">
           <motion.div
             className="px-4 mx-auto mt-[-6rem] max-w-screen-xl z-10 relative"
             initial="hidden"

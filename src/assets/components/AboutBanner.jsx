@@ -10,7 +10,7 @@ const AboutBanner = () => {
   return (
     <>
       <div className='flex justify-center items-center'>
-        <div className="grid md:grid-cols-3 gap-4 w-full max-w-screen-xl grid-cols-1">
+        <div className="grid md:grid-cols-3 lg:gap-4 w-full max-w-screen-xl grid-cols-1">
           <motion.div
             className='bg-slate-50/50 dark:bg-slate-700/40 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-3xl p-8 md:p-12 mb-8 shadow-xl hover:backdrop-blur-xl transition-all duration-300 ease-in-out md:col-span-1'
             initial="hidden"
