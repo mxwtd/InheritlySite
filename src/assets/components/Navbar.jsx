@@ -54,7 +54,7 @@ const Navbar = () => {
       <nav className="min-w-screen relative z-50">
         <div className="w-full flex flex-wrap items-center justify-between mx-auto px-2 md:px-6 p-4 md:p-6">
           <Link to='/' aria-label="home-btn" className='flex ml-2 md:mr-24'>
-            <img className='w-10 h-10 md:w-12 md:h-12 mr-2' src='https://res.cloudinary.com/djr22sgp3/image/upload/v1684267350/Inheritly_-_Third_design_qodghx.png' />
+            <img className='w-10 h-10 md:w-12 md:h-12 mr-2' src='https://res.cloudinary.com/djr22sgp3/image/upload/v1684267350/Inheritly_-_Third_design_qodghx.png' alt='inheritly-logo'/>
             <span className='self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white'>Inheritly</span>
           </Link>
           <div className="flex md:order-2 gap-4">
