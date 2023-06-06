@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
 
   useEffect(() => {
     const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon')
@@ -45,13 +45,30 @@ const Navbar = () => {
 
     themeToggleBtn.addEventListener('click', handleThemeToggle)
 
-    return () => {
-      themeToggleBtn.removeEventListener('click', handleThemeToggle)
+    const pageClickEvent = (e) => {
+      if (navRef.current !== null && !navRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+
+
+    if (isOpen) {
+      window.addEventListener('click', pageClickEvent);
     }
-  }, [])
+
+    return () => {
+      themeToggleBtn.removeEventListener('click', handleThemeToggle);
+      window.removeEventListener('click', pageClickEvent);
+    }
+  }, [isOpen])
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
-      <nav className="min-w-screen relative z-50">
+      <nav ref={navRef} className="min-w-screen relative z-50">
         <div className="w-full flex flex-wrap items-center justify-between mx-auto px-2 md:px-6 p-4 md:p-6">
           <Link to='/' aria-label="home-btn" className='flex ml-2 md:mr-24'>
             <img className='w-10 h-10 md:w-12 md:h-12 mr-2' src='https://res.cloudinary.com/djr22sgp3/image/upload/v1684267350/Inheritly_-_Third_design_qodghx.png' alt='inheritly-logo'/>
@@ -84,16 +101,16 @@ const Navbar = () => {
           >
             <ul className="flex flex-col gap-6 font-medium p-4 md:p-0 mt-4 border border-slate-100 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-slate-800 md:dark:bg-slate-900 dark:border-slate-700">
               <li>
-                <Link to="/" className="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700" aria-current="page">Home</Link>
+                <Link onClick={closeMenu} to="/" className="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700" aria-current="page">Home</Link>
               </li>
               <li>
-                <Link to="/about" className="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">About</Link>
+                <Link onClick={closeMenu} to="/about" className="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">About</Link>
               </li>
               <li>
-                <Link href="/services" className="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">Services</Link>
+                <Link onClick={closeMenu} href="/services" className="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">Services</Link>
               </li>
               <li>
-                <Link href="/contact" className="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">Contact</Link>
+                <Link onClick={closeMenu} href="/contact" className="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">Contact</Link>
               </li>
             </ul>
           </div>

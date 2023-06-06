@@ -10,7 +10,7 @@ const HomeHero = () => {
     <>
       <section className="min-h-screen flex items-center justify-center">
           <motion.div
-            className="px-4 mx-auto mt-[-6rem] max-w-screen-xl z-10 relative"
+            className="px-4 mx-auto mt-[-8rem] max-w-screen-xl z-10 relative"
             initial="hidden"
             animate="visible"
             variants={variants}
