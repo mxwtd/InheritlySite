@@ -8,7 +8,7 @@ const HomeHero = () => {
 
   return (
     <>
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900">
+      <section className="min-h-screen flex items-center justify-center">
           <motion.div
             className="px-4 mx-auto mt-[-6rem] max-w-screen-xl z-10 relative"
             initial="hidden"
@@ -16,8 +16,8 @@ const HomeHero = () => {
             variants={variants}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-col md:flex-row bg-slate-50/50 dark:bg-slate-700/40 mt-32 md:mt-0 py-10 md:py-20 rounded-3xl backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 ease-in-out border border-slate-200 dark:border-slate-700 shadow-xl">
-              <div id='column1' className="flex-1 mb-8 md:mb-0 mt-5 flex justify-center items-center px-10">
+            <div className="flex flex-col lg:flex-row bg-slate-50/50 dark:bg-slate-700/40 mt-32 md:mt-0 py-10 md:py-20 rounded-3xl backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 ease-in-out border border-slate-200 dark:border-slate-700 shadow-xl">
+              <div id='column1' className="flex-1 mb-8 md:mb-0 mt-5 flex justify-center items-center px-10 md:px-40 lg:px-10">
                 <img className="w-[100%]" src="https://res.cloudinary.com/djr22sgp3/image/upload/v1686063453/Mockup-Home_0.5x_jj6yyi.webp" alt="device-mockup"/>
               </div>
               <div id='column2' className="flex-1 text-left px-10 md:py-8">

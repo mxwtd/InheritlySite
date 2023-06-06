@@ -3,7 +3,9 @@ import AboutCards from "../components/AboutCards"
 const About = () => {
   return (
     <>
-      <AboutCards />
+      <div className="px-5">
+        <AboutCards />
+      </div>
     </>
   )
 }
