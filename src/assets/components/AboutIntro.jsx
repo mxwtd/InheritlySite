@@ -16,7 +16,7 @@ const AboutIntro = () => {
             variants={variants}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-col md:flex-row bg-slate-50/50 dark:bg-slate-700/40 mt-32 md:mt-0 py-10 md:py-20 rounded-3xl backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 ease-in-out border border-slate-200 dark:border-slate-700 shadow-xl">
+            <div className="flex flex-col md:flex-row bg-slate-50/50 dark:bg-slate-700/40 py-10 md:py-20 rounded-3xl backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 ease-in-out border border-slate-200 dark:border-slate-700 shadow-xl">
               <div id='column1' className="flex-1 mb-8 md:mb-0 mt-5 flex justify-center items-center">
                 <img className="w-[80%]" src="https://res.cloudinary.com/djr22sgp3/image/upload/v1686062089/Mockup-About_0.5x_usdzxy.webp" alt="device-mockup"/>
               </div>
