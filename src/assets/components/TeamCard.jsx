@@ -15,12 +15,12 @@ const TeamCard = () => {
     {
       name: 'Michael Whitehead',
       role: 'Partner',
-      imageUrl: 'https://dummyimage.com/257',
+      imageUrl: 'https://res.cloudinary.com/djr22sgp3/image/upload/v1686063705/blank-profile-picture-973460_1280_vphxzq.webp',
     },
     {
       name: 'John Doe',
       role: 'Investor',
-      imageUrl: 'https://dummyimage.com/258',
+      imageUrl: 'https://res.cloudinary.com/djr22sgp3/image/upload/v1686063705/blank-profile-picture-973460_1280_vphxzq.webp',
     },
   ];
 

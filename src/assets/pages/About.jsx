@@ -1,9 +1,9 @@
-import AboutHero from "../components/AboutHero"
+import AboutCards from "../components/AboutCards"
 
 const About = () => {
   return (
     <>
-      <AboutHero />
+      <AboutCards />
     </>
   )
 }
